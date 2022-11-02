@@ -1,38 +1,90 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 150px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  height: 193px;
+  padding: 30px 0 30px 111px;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 65px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header i {
+  font-size: 80px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header span {
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 400;
+}
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 77px;
+}
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 57px;
+}
+.counter-container i {
+  font-size: 52.5px;
+  text-shadow: 2px 2px 2px #281e61;
+}
+.counter-container i:active {
+  transform: translateY(2px);
+  text-shadow: none;
+}
+.counter-container .hidden {
+  visibility: hidden;
+}
+.counter-container .counter {
+  height: 150px;
+  width: 150px;
+  background: #5c48d3;
+  border-radius: 15px;
   color: white;
+  font-size: 96px;
+  font-weight: 400;
+  box-shadow: 2px 2px 2px #281e61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+button {
+  height: 60px;
+  width: 150px;
+  background: #5c48d3;
+  border-radius: 15px;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 2px 2px 2px #281e61;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+footer {
+  margin-bottom: 144px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.3px;
+  text-align: center;
+}
+footer a {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
 }
